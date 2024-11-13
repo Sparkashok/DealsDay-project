@@ -34,10 +34,6 @@ const EmployeeSchema = new mongoose.Schema({
         enum: ["MCA", "BCA", "BSC"],
         default: []
     },
-    imageUrl: {
-        type: String, // URL for the uploaded image
-        required: false
-    }
 });
 
 export const Employee = mongoose.model("Employee", EmployeeSchema);
